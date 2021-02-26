@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: cloud-order-service
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource               # 当前数据源操作类型
+    driver-class-name: org.mariadb.jdbc.Driver                 # mariadb驱动
+    url: jdbc:mariadb://localhost:3306/db2019?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: qihang
+
+eureka:
+  client:
+    #表示是否将自己注册进EurekaServer默认为true。
+    register-with-eureka: false
+    fetch-registry: false
