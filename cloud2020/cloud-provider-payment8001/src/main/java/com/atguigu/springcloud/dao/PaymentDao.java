@@ -1,12 +1,15 @@
 package com.atguigu.springcloud.dao;
 
 import com.atguigu.springcloud.entities.Payment;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 /**
  * @author lqh
  * @create 2021/2/25 下午4:40
  */
+
+@Mapper
 public interface PaymentDao {
 
     public int create(Payment payment);
