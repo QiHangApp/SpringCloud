@@ -30,10 +30,11 @@
         </dependency>-->
 
         <!--自定义jar-->
+        <!--引入自定义的api通用包，可以使用Payment支付Entity-->
         <dependency>
             <groupId>com.atguigu.springcloud</groupId>
             <artifactId>cloud-api-commons</artifactId>
-            <version>${project.versionq}</version>
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>
