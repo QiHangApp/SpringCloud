@@ -1,0 +1,18 @@
+#8004表示注册到zookeeper服务器的支付服务提供者端口号
+server:
+  port: 8004
+
+#服务别名----注册zookeeper到注册中心名称
+spring:
+  application:
+    name: cloud-provider-payment
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource               # 当前数据源操作类型
+    driver-class-name: org.mariadb.jdbc.Driver                 # mariadb驱动
+    url: jdbc:mariadb://localhost:3306/db2019?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: qihang
+  cloud:
+    zookeeper:
+      connect-string: 192.168.1.110:2181
+
