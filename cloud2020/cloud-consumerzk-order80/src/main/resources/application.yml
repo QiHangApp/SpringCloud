@@ -5,7 +5,8 @@ server:
 #服务别名----注册zookeeper到注册中心名称
 spring:
   application:
-    name: cloud-provider-payment
+    name: cloud-consumer-order
   cloud:
+    #注册到zookeeper地址
     zookeeper:
-      connect-string: 192.168.111.144:2181
+      connect-string: 192.168.0.133:2181
