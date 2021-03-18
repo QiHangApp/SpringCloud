@@ -16,7 +16,7 @@
         <module>cloud-provider-payment8002</module>
         <module>cloud-provider-payment8004</module>
         <module>cloud-consumerzk-order80</module>
-        <module>cloud-providerconsul-payment</module>
+        <module>cloud-providerconsul-payment8006</module>
         <module>cloud-consumerconsul-order</module>
     </modules>
     <packaging>pom</packaging>
@@ -33,15 +33,15 @@
     </properties>
 
 
-    <dependencies>
-        <!--添加热部署-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <optional>true</optional>
-            <scope>true</scope>
-        </dependency>
-    </dependencies>
+<!--    <dependencies>-->
+<!--        &lt;!&ndash;添加热部署&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-devtools</artifactId>-->
+<!--            <optional>true</optional>-->
+<!--            <scope>true</scope>-->
+<!--        </dependency>-->
+<!--    </dependencies>-->
     <dependencyManagement>
         <dependencies>
             <dependency>
