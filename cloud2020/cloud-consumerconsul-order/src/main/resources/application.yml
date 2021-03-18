@@ -1,9 +1,9 @@
 ###consul服务端口号
 server:
-  port: 8006
+  port: 8080
 spring:
   application:
-    name: consul-provider-payment
+    name: cloud-consumer-order
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource               # 当前数据源操作类型
     driver-class-name: org.mariadb.jdbc.Driver                 # mariadb驱动
