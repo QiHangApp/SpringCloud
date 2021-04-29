@@ -1,5 +1,5 @@
 server:
-  port: 8001
+  port: 8009
 
 spring:
   application:
@@ -13,7 +13,18 @@ spring:
 
 eureka:
   client:
+    #false表示不向注册中心注册自己。
     register-with-eureka: true
+    #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
     fetch-registry: true
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka
+
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "*"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
